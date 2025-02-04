@@ -1,0 +1,101 @@
+[
+    {
+        "id":1,
+        "name":"Story Book",
+        "title":"The Curious Incident of the Dog in the Night-Time.",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1738494736~exp=1738498336~hmac=d8622f76bdee42278f280b3c34f061188db589ad87fe5d9285feaab6450e415d&w=740"
+
+    },
+    {
+        "id":2,
+        "name":"Adventure",
+        "title":"Adventure add your venture in your journey of life",
+        "price":400,
+        "category":"Adventure",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1738494736~exp=1738498336~hmac=d8622f76bdee42278f280b3c34f061188db589ad87fe5d9285feaab6450e415d&w=740"
+
+    },
+    {
+        "id":3,
+        "name":"Novel Book",
+        "title":"Mathematician aacharya chankyaa's story novel",
+        "price":99,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1738494736~exp=1738498336~hmac=d8622f76bdee42278f280b3c34f061188db589ad87fe5d9285feaab6450e415d&w=740"
+
+    },
+    {
+        "id":4,
+        "name":"Comedy Book",
+        "title":"Laugh Out Loud: A Hilarious Collection of Comedy Books",
+        "price":20,
+        "category":"Comedy",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1738494736~exp=1738498336~hmac=d8622f76bdee42278f280b3c34f061188db589ad87fe5d9285feaab6450e415d&w=740"
+
+    },
+    {
+        "id":5,
+        "name":"Fiction Book",
+        "title":"Beauty and the Beast: A classic story book for children",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1738494736~exp=1738498336~hmac=d8622f76bdee42278f280b3c34f061188db589ad87fe5d9285feaab6450e415d&w=740"
+
+    },
+    {
+        "id":6,
+        "name":"Sports Book",
+        "title":"Game On: An Exciting Collection of Sports Books",
+        "price":200,
+        "category":"Sports",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1738494736~exp=1738498336~hmac=d8622f76bdee42278f280b3c34f061188db589ad87fe5d9285feaab6450e415d&w=740"
+
+    },
+    {
+        "id":7,
+        "name":"Music Book",
+        "title":"Melodic Reads: A Captivating Collection of Music Books",
+        "price":80,
+        "category":"Music",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1738494736~exp=1738498336~hmac=d8622f76bdee42278f280b3c34f061188db589ad87fe5d9285feaab6450e415d&w=740"
+
+    },
+    {
+        "id":8,
+        "name":"Friendship Book",
+        "title":" Bonds: A Heartwarming Collection of Friendship Books",
+        "price":300,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1738494736~exp=1738498336~hmac=d8622f76bdee42278f280b3c34f061188db589ad87fe5d9285feaab6450e415d&w=740"
+
+    },
+    {
+        "id":9,
+        "name":"Love is life",
+        "title":"Love Is Life: A Collection of Heartfelt Love Stories",
+        "price":150,
+        "category":"Relationship",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1738494736~exp=1738498336~hmac=d8622f76bdee42278f280b3c34f061188db589ad87fe5d9285feaab6450e415d&w=740"
+
+    },
+    {
+        "id":10,
+        "name":"Risk is Life",
+        "title":"Embrace the Challenge: A  Collection of Books on Risk",
+        "price":350,
+        "category":"Adventure",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1738494736~exp=1738498336~hmac=d8622f76bdee42278f280b3c34f061188db589ad87fe5d9285feaab6450e415d&w=740"
+
+    },
+    {
+        "id":11,
+        "name":"Food",
+        "title":"Savor the Flavor: A Delicious Collection of Food Books",
+        "price":700,
+        "category":"Food",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1738494736~exp=1738498336~hmac=d8622f76bdee42278f280b3c34f061188db589ad87fe5d9285feaab6450e415d&w=740"
+
+    }
+]
