@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 function Login() {
   const {
@@ -9,20 +11,42 @@ function Login() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async(data) => {
+    const userInfo = {
+      email: data.email,
+      password: data.password,
+    };
+    try {
+      const res = await axios.post("http://localhost:4001/user/login", userInfo);
+      if (res.data) {
+        toast.success("Login Successfully !!");
+        document.getElementById("my_modal_3").close();
+        setTimeout(()=>{
+          window.location.reload();
+          localStorage.setItem("Users",JSON.stringify(res.data.user));
+        },2000);
+      }
+    } catch (err) {
+      if (err.response) {
+        console.log(err);
+        toast.error("Error : " + err.response.data.message); 
+        setTimeout(()=>{},1000);
+      } 
+    }
   };
 
   return (
     <>
       <div>
         <dialog id="my_modal_3" className="modal">
-          <div className="modal-box bg-white h-auto">
+          <div className="modal-box bg-white dark:bg-slate-800 dark:text-white h-auto">
             <form onSubmit={handleSubmit(onSubmit)}>
-              <Link
-                to="/"
-                className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-              >
+            <Link
+            to="/"
+             onClick={() => document.getElementById("my_modal_3").close()}
+             className="btn btn-sm btn-circle btn-ghost absolute right-2 top-3 dark:hover:border-white dark:bg-slate-800 dark:text-white 
+             light:hover:border-black light:bg-white light:text-black"
+            >
                 ✕
               </Link>
 
@@ -33,7 +57,7 @@ function Login() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-80 h-10 rounded-sm border px-3"
+                  className="w-80 h-10 dark:bg-black dark:text-white rounded-sm border px-3"
                   {...register("email", { required: "Email is required" })}
                 />
                 {errors.email && (
@@ -46,7 +70,7 @@ function Login() {
                 <input
                   type="password"
                   placeholder="Enter your password"
-                  className="w-80 h-10 rounded-sm border px-3"
+                  className="w-80 h-10 dark:bg-black dark:text-white  rounded-sm border px-3"
                   {...register("password", { required: "Password is required" })}
                 />
                 {errors.password && (
@@ -58,7 +82,7 @@ function Login() {
               <div className="flex mt-8 py-1 justify-between">
                 <button
                   type="submit"
-                  className="bg-pink-400 text-white ml-1 px-3 py-1 rounded-md"
+                  className="bg-pink-400 dark:bg-pink-600 dark:hover:bg-pink-700 text-white ml-1 px-3 py-1 rounded-md"
                 >
                   Login
                 </button>

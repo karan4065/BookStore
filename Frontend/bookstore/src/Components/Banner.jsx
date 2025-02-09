@@ -1,5 +1,5 @@
 import React from 'react';
-import banner from '../../public/bbg.jpg';
+import banner from '../../public/lastbook.png';
 
 const Banner = () => {
   return (
@@ -9,7 +9,7 @@ const Banner = () => {
           <div className="space-y-8 py-8">
             <h1 className="text-4xl font-bold">
               Hello, welcome here to learn something 
-              <span className="text-teal-400"> new everyday !!!</span>
+              <span className="text-teal-500"> new everyday !!!</span>
             </h1>
             <p className="dark:text-slate-500 text-xl w-auto md:w-full text-zinc-700">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, omnis id porro expedita hic ab maxime dicta provident nostrum velit vel amet error officiis.
@@ -22,11 +22,11 @@ const Banner = () => {
               <input type="text" className="grow" placeholder="Email" />
             </label>
           </div>
-          <button className="btn mt-6 btn-secondary bg-teal-400 outline-none hover:bg-teal-500 cursor-pointer duration-200 text-white">
-            Subscribe
+          <button className="btn mt-2 md:mt-1 btn-secondary bg-teal-500 outline-none hover:bg-teal-6  00 cursor-pointer duration-200 text-white">
+            Get Started
           </button>
         </div>
-        <div className="order-1 w-full md:w-1/2 mt-8 md:mt-4">
+        <div className="order-1 w-full md:w-1/2 mt-12 md:mt-12">
           <img src={banner} className="w-86 h-86 mt-4 md:mt-10 md:ml-10" alt="Banner" />
         </div>
       </div>

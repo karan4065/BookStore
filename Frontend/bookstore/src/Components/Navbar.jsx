@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Login from './Login';
+import { useAuth } from '../context/AuthProvider';
+import Logout from './Logout';
 
 const Navbar = () => {
+
+  const [authUser,setAuthUser] = useAuth();
+   
+
   const [theme,setTheme] = useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light")
 const element = document.documentElement;
 useEffect(()=>{
@@ -123,13 +129,17 @@ useEffect(()=>{
   </svg>
 </label>
   </div>
-  <div className="mr-3 px-5 md:px-2 md:mr-1">
-    <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 cursor-pointer duration-300" 
-   onClick={()=>document.getElementById('my_modal_3').showModal()
-    }
-    >Login</a>
-    <Login/>
-  </div>
+
+    {
+      authUser?(<Logout/>) :( 
+       <div className="mr-3 px-5 md:px-2 md:mr-1">
+      <a className="dark:bg-slate-600 dark:text-white dark:hover:dark:bg-slate-700 dark:text-white bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 cursor-pointer duration-300" 
+      onClick={()=>document.getElementById('my_modal_3').showModal()}>
+        Login
+        </a>
+       <Login/>
+     </div>
+  )}
   </div>
 </div>
      </div>
